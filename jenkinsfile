@@ -6,7 +6,7 @@ pipeline {
     parameters {
         string(name: 'person', defaultValue: "Shazib Mustafa joiya", description: "Who are you?")
         booleanParam(name: 'Male', defaultValue: true, description: "")
-        choice(name: 'branch', choices:  ['master', 'QA', 'dev'], description: "")
+        choice(name: 'branch', choices:  ['main', 'QA', 'dev'], description: "")
     }
     stages {
         stage('Test') {
