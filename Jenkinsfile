@@ -10,8 +10,6 @@ pipeline {
          choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
          file(name: 'FILE', description: 'Some file to upload')
          password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'A secret password')
-    }
-    parameters {
         string(name: 'person', defaultValue: "Shazib Mustafa joiya", description: "Who are you?")
         booleanParam(name: 'Male', defaultValue: true, description: "")
         choice(name: 'branch', choices:  ['main', 'QA', 'dev'], description: "")
